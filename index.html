@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        margin: 0;
+      }
+
+      .container {
+        max-width: 428px;
+        margin: 0 auto;
+        background-color: #313438;
+        height: 100vh;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-evenly;
+        color: #fff;
+        background: linear-gradient(
+          90deg,
+          rgba(111, 177, 127, 1) 0%,
+          rgba(154, 173, 89, 1) 100%
+        );
+        padding: 2em 0;
+        align-items: center;
+      }
+
+      .contact-search {
+        font-size: 1.2em;
+        padding: 0.3em 0.3em;
+        border-radius: 100px;
+        border: 1px solid white;
+        outline: none;
+      }
+
+      .contacts-library {
+        background: #313438;
+      }
+
+      .add {
+        color: #fff;
+        font-size: 1.5em;
+      }
+
+      i {
+        color: #fff;
+        font-size: 1.5em;
+      }
+
+      .contact-name {
+        color: #fff;
+        font-size: 1.2em;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+
+      hr {
+        border: 1px solicontactd #494a4b;
+      }
+
+      .list__item {
+        list-style: none;
+      }
+
+      .relationship {
+        color: #fff;
+        width: 6em;
+        text-align: center;
+        padding: 0.4em 0.5em;
+        border-radius: 100px;
+        border-top-left-radius: 0;
+        background-color: #75a85e;
+      }
+
+      .contact-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.5em;
+        transition: 0.3s;
+      }
+
+      .contact-section:hover {
+        background-color: #48494a;
+      }
+
+      .text {
+        padding-left: 1em;
+      }
+    </style>
+
+    <script
+      src="https://kit.fontawesome.com/6b20b1c14d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--  SEARCH FORM -->
+      <header class="header">
+        <form class="search-bar">
+          <input
+            type="search-name"
+            class="contact-search"
+            name="search-area"
+            placeholder="Search"
+          />
+        </form>
+
+        <!--  ADD-CONTACT BUTTON/ICON -->
+        <a href="edit.html"><i class="fas fa-plus-circle add"></i></a>
+      </header>
+
+      <!--  CONTACT LIST -->
+      <section class="contacts-library">
+        <ul class="contacts-list">
+          <a href="contact-profile.html">
+            <div class="contact-section">
+              <li class="list__item">
+                <p class="contact-name">John Doe</p>
+                <p class="relationship">Friend</p>
+              </li>
+
+              <li class="list__item">
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-sms text"></i>
+              </li>
+            </div>
+          </a>
+
+          <hr />
+
+          <a href="contact-profile.html">
+            <div class="contact-section">
+              <li class="list__item">
+                <p class="contact-name">Jane Doe</p>
+                <p class="relationship">Friend</p>
+              </li>
+
+              <li class="list__item">
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-sms text"></i>
+              </li>
+            </div>
+          </a>
+
+          <hr />
+
+          <a href="contact-profile.html">
+            <div class="contact-section">
+              <li class="list__item">
+                <p class="contact-name">Alex Blakely</p>
+                <p class="relationship">Friend</p>
+              </li>
+
+              <li class="list__item">
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-sms text"></i>
+              </li>
+            </div>
+          </a>
+
+          <hr />
+
+          <a href="contact-profile.html">
+            <div class="contact-section">
+              <li class="list__item">
+                <p class="contact-name">Sarah Smith</p>
+                <p class="relationship">Family</p>
+              </li>
+              <li class="list__item">
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-sms text"></i>
+              </li>
+            </div>
+          </a>
+
+          <hr />
+
+          <a href="contact-profile.html">
+            <div class="contact-section">
+              <li class="list__item">
+                <p class="contact-name">Johann Brooke</p>
+                <p class="relationship">Family</p>
+              </li>
+              <li class="list__item">
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-sms text"></i>
+              </li>
+            </div>
+          </a>
+
+          <hr />
+
+          <a href="contact-profile.html">
+            <div class="contact-section">
+              <li class="list__item">
+                <p class="contact-name">Sam Peterson</p>
+                <p class="relationship">Family</p>
+              </li>
+              <li class="list__item">
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-sms text"></i>
+              </li>
+            </div>
+          </a>
+
+          <hr />
+
+          <a href="contact-profile.html">
+            <div class="contact-section">
+              <li class="list__item">
+                <p class="contact-name">Sebastion Agnew</p>
+                <p class="relationship">Work</p>
+              </li>
+              <li class="list__item">
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-sms text"></i>
+              </li>
+            </div>
+          </a>
+
+          <hr />
+
+          <a href="contact-profile.html">
+            <div class="contact-section">
+              <li class="list__item">
+                <p class="contact-name">John Doe</p>
+                <p class="relationship">Friend</p>
+              </li>
+              <li class="list__item">
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-sms text"></i>
+              </li>
+            </div>
+          </a>
+
+          <hr />
+          <div class="contact-section">
+            <li class="list__item">
+              <p class="contact-name">Jane Doe</p>
+              <p class="relationship">Friend</p>
+            </li>
+            <li class="list__item">
+              <i class="fas fa-phone"></i>
+              <i class="fas fa-sms text"></i>
+            </li>
+          </div>
+
+          <hr />
+
+          <a href="contact-profile.html">
+            <div class="contact-section">
+              <li class="list__item">
+                <p class="contact-name">Alex Blakely</p>
+                <p class="relationship">Friend</p>
+              </li>
+              <li class="list__item">
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-sms text"></i>
+              </li>
+            </div>
+          </a>
+
+          <hr />
+
+          <a href="contact-profile.html">
+            <div class="contact-section">
+              <li class="list__item">
+                <p class="contact-name">Sarah Smith</p>
+                <p class="relationship">Family</p>
+              </li>
+              <li class="list__item">
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-sms text"></i>
+              </li>
+            </div>
+          </a>
+
+          <hr />
+
+          <a href="contact-profile.html">
+            <div class="contact-section">
+              <li class="list__item">
+                <p class="contact-name">Johann Brooke</p>
+                <p class="relationship">Family</p>
+              </li>
+              <li class="list__item">
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-sms text"></i>
+              </li>
+            </div>
+          </a>
+
+          <hr />
+
+          <a href="contact-profile.html">
+            <div class="contact-section">
+              <li class="list__item">
+                <p class="contact-name">Sam Peterson</p>
+                <p class="relationship">Family</p>
+              </li>
+              <li class="list__item">
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-sms text"></i>
+              </li>
+            </div>
+          </a>
+
+          <hr />
+
+          <a href="contact-profile.html">
+            <div class="contact-section">
+              <li class="list__item">
+                <p class="contact-name">Sebastion Agnew</p>
+                <p class="relationship">Work</p>
+              </li>
+              <li class="list__item">
+                <i class="fas fa-phone"></i>
+                <i class="fas fa-sms text"></i>
+              </li>
+            </div>
+          </a>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
